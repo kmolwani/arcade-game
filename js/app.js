@@ -312,7 +312,7 @@ function level() {
     var winningMessage = document.createElement('h1')
     document.body.appendChild(winningMessage);
     winningMessage.innerHTML = "<pre>" + "Congratulations!!! \n\n You have WON the game." + "</pre>";
-    player.x = 0;
+    setTimeout(function() {location.reload()}, 3000);
   }
   //using pre tag to be able to use new-line string
   var div = document.getElementById('level');
