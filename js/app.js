@@ -112,9 +112,9 @@ function totalEnemies() { // creating function to generate enemies form the Enem
   var y = 35; // declaring y location of the enemy
   var y2 = 120; // declaring y location of the enemy
   var y3 = 205; // declaring y location of the enemy
-  var ranNumber = (Math.floor(Math.random() * numberOfBugs)); // declaring random number to have different number of bugs on each location in the game
-  var ranNumber2 = (Math.floor(Math.random() * numberOfBugs));
-  var ranNumber3 = (Math.floor(Math.random() * numberOfBugs));
+  var ranNumber = (Math.floor(Math.random() * 4)); // declaring random number to have different number of bugs on each location in the game
+  var ranNumber2 = (Math.floor(Math.random() * 4));
+  var ranNumber3 = (Math.floor(Math.random() * 4));
 
   for (let i=0; i < (numberOfBugs - ranNumber); i++) {
     enemy.x = x;
