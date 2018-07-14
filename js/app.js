@@ -303,6 +303,10 @@ document.addEventListener('keyup', function(e) {
 // If the user crosses level 5, a Winning message is presented to the user.
 function level() {
   var level = numberOfBugs;
+  // decresing the enemy speed after the user reaches level 3
+  if (level == 3) {
+    speedUpdate = 2;
+  }
   if (level > 5) {
     document.body.innerHTML = "";
     var winningMessage = document.createElement('h1')
